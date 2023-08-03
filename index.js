@@ -67,3 +67,43 @@ function error(){
     window.prompt("Something went wrong,please try again!");
 }
 
+// Create an array that lists your i.e. experience, education, licenses, skills or similar
+// The items of the array should be strings
+
+let mySkills=[
+    'Freelancer','College Student','Front End learner','Kitbashing'
+]
+console.log(mySkills)
+
+let experience = ["CEO at Scrimba", "Frontend developer at Xeneta", "People counter for Norstat"]
+
+// Make the following appear in the console:
+// Frontend developer at Xeneta
+// People counter for Norstat
+// CEO at Scrimba
+console.log(experience[1])
+console.log(experience[2])
+console.log(experience[0])
+// Create an array that describes yourself. Use the three primitive data types you've learned
+// It should contain your name (string), your age (number), and whether you like pizza (boolean)
+
+let myInfo=['Alberto Anunciado Jr', 18, "Like Pizza " +true];
+console.log(myInfo)
+
+
+let messages = [
+    "Hey, how's it going?",        
+    "I'm great, thank you! How about you?",
+    "All good. Been working on my portfolio lately."
+]
+let newMessage = "Same here!"
+
+messages.push(newMessage)
+let pops=messages.pop();    
+console.log(messages)
+
+
+let nums=[1,3,6,3,4,10]
+
+nums.filter( nums<2)
+console.log(nums)
