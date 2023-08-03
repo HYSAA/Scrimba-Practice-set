@@ -1,11 +1,8 @@
-let messages = [
-    "Hey, how's it going?",        
-    "I'm great, thank you! How about you?",
-    "All good. Been working on my portfolio lately."
-]
-let newMessage = "Same here!"
+let j=0;
+let cards = [7, 3, 9]
 
-messages.push(newMessage)
-let pops=messages.pop();    
-console.log(messages)
-
+// Create a for loop that logs out all the cards in the array
+// Use cards.length to specify how long the loop should run
+ for(j=0;j<cards.length;j++){
+    console.log(cards[j]);
+ }

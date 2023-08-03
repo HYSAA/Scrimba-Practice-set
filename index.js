@@ -91,11 +91,11 @@ let myInfo=['Alberto Anunciado Jr', 18, "Like Pizza " +true];
 console.log(myInfo)
 
 
-let messages = [
-    "Hey, how's it going?",        
-    "I'm great, thank you! How about you?",
-    "All good. Been working on my portfolio lately."
-]
+// let messages = [
+//     "Hey, how's it going?",        
+//     "I'm great, thank you! How about you?",
+//     "All good. Been working on my portfolio lately."
+// ]
 let newMessage = "Same here!"
 
 messages.push(newMessage)
@@ -107,3 +107,64 @@ let nums=[1,3,6,3,4,10]
 
 nums.filter( nums<2)
 console.log(nums)
+
+//FOR LOOPS PRACTICE
+// let count=1;
+// // count++;
+// count+=1;
+
+// console.log(count)
+let i=5;
+for(let count=1;count < 5; count++){
+console.log(count)
+}
+for ( let count = 10;  count < 21;  count += 1 )  {
+    
+    console.log(count)
+
+}
+// Create a for loop that counts from 10 to 100 in steps of 10
+// Use console.log to log out the numbers
+for (let count=10;count<110;count+=10){
+console.log(count)
+}
+
+let messages = [
+    "Hey, how's it going?",        
+    "I'm great, thank you! How about you?",
+    "All good. Been working on my portfolio lately.",
+    "Same here!",
+    "ASDASDASDASDASD",
+    "ASDASDASDDDDDDDDDDDDDDDDD"
+]
+for(let i =0 ; i <messages.length;i+=1){
+console.log(messages[i])
+
+}
+let j=0;
+let cards = [7, 3, 9]
+
+// Create a for loop that logs out all the cards in the array
+// Use cards.length to specify how long the loop should run
+ for(j=0;j<cards.length;j++){
+    console.log(cards[j]);
+ }
+
+
+
+let sentence = ["Hello ", "my ", "name ", "is ", "Per"] 
+let greetingEl = document.getElementById("greeting-el")
+for(let i=0;i<sentence.length;i+=1)
+{
+greetingEl.textContent=sentence[i];
+}
+  
+function show(){
+let sentence = ["Hello ", "my ", "name ", "is ", "Per"]
+let greetingEl = document.getElementById("greeting-el")
+for(let i=0;i<sentence.length;i+=1)
+{
+greetingEl.textContent+=sentence[i];
+
+}
+}
