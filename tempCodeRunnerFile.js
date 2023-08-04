@@ -1,14 +1,9 @@
+let first=4;
+let second=5;
+function totalTime(){
+return first+second        
 
-let playerone=102;
-let playertwo=103;
+}
+let ya=totalTime()
+console.log(totalTime())
 
-function getFast(){
-if(playerone<playertwo){
-    return playerone;
-    console.log("player one wins")
-}else if(playerone>playertwo){ 
-    return playertwo;
-console.log("player two wins");
-}
-}
-getFast()

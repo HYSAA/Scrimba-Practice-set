@@ -176,9 +176,37 @@ function getFast(){
 if(playerone<playertwo){
     return playerone;
     console.log("player one wins")
-}else if(playerone>playertwo){ 
+}else if(playertwo<playerone){ 
     return playertwo;
 console.log("player two wins");
+}else{
+    return playerone
 }
 }
-getFast()
+let result=getFast()
+console.log(result)
+
+let x=3
+let y=4
+function ret(x,y){
+    return x+y
+    
+}
+
+console.log(ret())
+
+// let fastestRace = getFastestRaceTime()
+// console.log(fastestRace)
+
+// Write a function that returns the total race time
+// Call/invoke the function and store the returned value in a new variable
+// Finally, log the variable out
+let first=4;
+let second=5;
+function totalTime(){
+return first+second        
+
+}
+let ya=totalTime()
+console.log(totalTime())
+
