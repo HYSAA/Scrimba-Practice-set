@@ -1,9 +1,8 @@
-let first=4;
-let second=5;
-function totalTime(){
-return first+second        
 
+function rollDice(){
+let dice=Math.floor(Math.random()*6)+1
+return dice;
 }
-let ya=totalTime()
-console.log(totalTime())
+console.log(rollDice())
+rollDice()
 

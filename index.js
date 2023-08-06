@@ -210,3 +210,20 @@ return first+second
 let ya=totalTime()
 console.log(totalTime())
 
+let randomNumber = Math.floor( Math.random() * 30 ) + 1
+
+// console.log(randomNumber)
+
+for(let k=0;k<randomNumber;k++)
+{
+    console.log(randomNumber)
+}
+
+
+function rollDice(){
+let dice=Math.floor(Math.random()*6)+1
+return dice;
+}
+console.log(rollDice())
+rollDice()
+
