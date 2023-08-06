@@ -227,3 +227,53 @@ return dice;
 console.log(rollDice())
 rollDice()
 
+let getCertificate=true;
+let passedCourse=true;
+ 
+function generateCertificate(){
+if(getCertificate==true&&passedCourse==true)
+{
+    console.log("generating certificate")
+}else{
+    console.log("you failed lmao")
+}
+}
+generateCertificate()
+
+let hasSolvedChallenge=false;
+let hasHintsLeft=false;
+// Create an if statement that checks that both variables are false.
+// If so, run the showSolution() function
+function checkPlayer(){
+
+    if (hasHintsLeft==false&&hasSolvedChallenge==false){
+        showSolution();
+    }
+}
+
+
+function showSolution(){
+ console.log("showing solutions")
+
+}
+checkPlayer()
+// Create two boolean variables, likesDocumentaries and likesStartups
+// Use an OR statement (||) to call recommendMovie() if either of those variables are true
+let likeDocumentaries=false;
+let likeStartups=true;
+
+function guestUser(){
+    if(likeDocumentaries==true||likeStartups==true)
+    renderMovie()
+else{
+renderWrong()
+}
+}
+function renderWrong(){
+    console.log("ok nothing")
+}
+function renderMovie(){
+console.log("Hey,check out this film")
+
+}
+guestUser()

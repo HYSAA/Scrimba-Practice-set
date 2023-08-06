@@ -1,8 +1,18 @@
+let likeDocumentaries=false;
+let likeStartups=true;
 
-function rollDice(){
-let dice=Math.floor(Math.random()*6)+1
-return dice;
+function guestUser(){
+    if(likeDocumentaries==true||likeStartups==true)
+    renderMovie()
+else{
+renderWrong()
 }
-console.log(rollDice())
-rollDice()
+}
+function renderWrong(){
+    console.log("ok nothing")
+}
+function renderMovie(){
+console.log("Hey,check out this film")
 
+}
+guestUser()
