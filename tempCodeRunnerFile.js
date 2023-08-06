@@ -1,18 +1,8 @@
-let likeDocumentaries=false;
-let likeStartups=true;
-
-function guestUser(){
-    if(likeDocumentaries==true||likeStartups==true)
-    renderMovie()
-else{
-renderWrong()
+let myLife={
+   
+  name:"Aj",
+  age:22,
+  birthday:"January",
+  isCute:true
 }
-}
-function renderWrong(){
-    console.log("ok nothing")
-}
-function renderMovie(){
-console.log("Hey,check out this film")
-
-}
-guestUser()
+console.log(myLife)
