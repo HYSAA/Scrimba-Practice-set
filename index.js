@@ -287,3 +287,19 @@ let myLife={
   skills:["cooking","cleaning"]
 }
 console.log(myLife.skills[1])
+
+// Create an object that represents an airbnb castle listing.
+// It should contain at least one boolean, one string, one number, and one array
+// Log out at least two of the keys using the dot notation
+const airbnb={
+
+    hasCr:false,
+    location:'New York',
+    rooms:["master's bedroom","kitchen","Sala"],
+    bldgDate:1989
+}
+console.log(airbnb.bldgDate)
+console.log(airbnb.hasCr)
+console.log(airbnb.location)
+console.log(airbnb.rooms)
+
