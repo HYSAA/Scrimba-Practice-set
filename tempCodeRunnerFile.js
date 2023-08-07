@@ -1,12 +1,10 @@
-const airbnb={
 
-    hasCr:false,
-    location:'New York',
-    rooms:["master's bedroom","kitchen","Sala"],
-    bldgDate:1989
+let person={
+    name:"Aj",
+    age:22,
+    country:"Philippines"
 }
-console.log(airbnb.bldgDate)
-console.log(airbnb.hasCr)
-console.log(airbnb.location)
-console.log(airbnb.rooms)
-
+function logData(){
+    console.log(person.name+" is "+ person.age+" years old and lives in "+ person.country)
+}
+logData();
