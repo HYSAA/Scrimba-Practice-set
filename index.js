@@ -315,9 +315,69 @@ console.log(airbnb.rooms)
 let person={
     name:"Aj",
     age:22,
-    country:"Philippines"
+    country:"Philippines",
+
 }
+
 function logData(){
     console.log(person.name+" is "+ person.age+" years old and lives in "+ person.country)
 }
 logData();
+
+// less than 6 years old -> free
+// 6 to 17 years old     -> child discount
+// 18 to 26 years old    -> student discount
+// 27 to 66 years old    -> full price
+// over 66 years old     -> senior citizen discount
+
+// Create a conditional statement (if/else/else if) that logs out the discount
+// the passenger will get based upon the value of the age variablew
+let human=Math.floor(Math.random() *66)+1;
+// > greater than
+// < less than 
+console.log(human)
+function checkAge(){
+  if(human < 6){
+     console.log("free")
+  }else if(human >= 6 && human<= 17){
+    console.log("child discount")
+  }else if(human>=18 && human <=26){
+    console.log("Student discount")
+  }else if(human >=27 && human <=66){
+    console.log("full price")
+  }else{
+    console.log("senior citizen discount")
+  }
+}
+checkAge();
+// let largeCountries = ["China","India","USA","Indonesia","Pakistan"]
+
+/* Use a for loop to log the following to the console:
+
+The 5 largest countries in the world:
+- China
+- India
+- United States
+- Indinesia
+- Pakistan
+*/
+function getLargest(){
+for(let i=0; i < largeCountries.length;i++){
+console.log("-" + largeCountries[i])
+}
+}
+getLargest()
+let largeCountries = ["Tuvalu","India","USA","Indonesia","Monaco"]
+
+// You need to help me fixup the largeCountries array so that 
+// China and Pakistan are added back into their respective places
+largeCountries.push("China")
+largeCountries.push("Pakistan")
+// Use push() & pop() and their counterparts unshift() & shift()
+// Google how to use unshift() and shift()
+for(let i=0;i<largeCountries.length;i++){
+
+    largeCountries.pop()
+   
+    console.log(largeCountries[i])
+}
