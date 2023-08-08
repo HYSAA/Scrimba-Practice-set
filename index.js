@@ -368,16 +368,21 @@ console.log("-" + largeCountries[i])
 }
 getLargest()
 let largeCountries = ["Tuvalu","India","USA","Indonesia","Monaco"]
-
-// You need to help me fixup the largeCountries array so that 
-// China and Pakistan are added back into their respective places
-largeCountries.push("China")
+largeCountries.shift()
+largeCountries.unshift("China")
+largeCountries.pop()
 largeCountries.push("Pakistan")
-// Use push() & pop() and their counterparts unshift() & shift()
-// Google how to use unshift() and shift()
-for(let i=0;i<largeCountries.length;i++){
+console.log(largeCountries)
 
+for(let i=0;i<largeCountries.length;i++){
     largeCountries.pop()
-   
     console.log(largeCountries[i])
+}
+let weekday={
+   date: "Friday",datee:13
+}
+// If it is Friday the 13th, log out this spooky face: 😱
+// Use the logical "AND operator" -> &&
+if(weekday.date=="Friday" && weekday.datee==13){
+    console.log("😱")
 }
