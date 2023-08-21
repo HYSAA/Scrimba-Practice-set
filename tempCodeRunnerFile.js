@@ -1,12 +1,11 @@
-let hands = ["rock", "paper", "scissor"]
+const recipient = "James"
+const sender="aj"
+// Refactor the email string to use template strings
+// const email = "Hey " + recipient + "! How is it going? Cheers Per"
+//template strings
+const email=`Hey 
+${recipient}! 
+How is it going? 
+Cheers,${sender}`
 
-// Create a function that returns a random item from the array
-
-const randomHands = () => {
-    for(let i=0; i< hands.length;i++){
-let index=Math.floor(Math.random()*3) 
-return hands[index]
-    }
-}
-let outcome=randomHands()
-console.log(outcome)
+console.log(email)
