@@ -1,9 +1,13 @@
-const getFirst=(arr)=>{
+let myCourses = ["Learn CSS Animations", "UI Design Fundamentals", "Intro to Clean Code"]
 
-return arr[0]
+// Create a function that takes a single parameter, an array,
+// and logs all the items of the array to the console.
+// Call the function while passing in myCourses as an argument
 
-
+const subjects=(aj) =>{
+  for(let i=0;i < aj.length;i++){
+    console.log(aj[i])
+  }
 }
 
-let card=getFirst([10,20,30])
-console.log(card)
+subjects(myCourses)
