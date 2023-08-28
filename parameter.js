@@ -28,3 +28,16 @@ const add = (x,y) => {
 console.log( add(3,4)    ) // should log 7
 console.log( add(9, 102) ) // should log 111
 
+// Create a function, getFirst(arr), that returns the first item in the array
+const getFirst=(arr)=>{
+
+return arr[0]
+
+
+}
+
+let card=getFirst([10,20,30])
+console.log(card)
+
+
+// Call it with an array as an argument to verify that it works

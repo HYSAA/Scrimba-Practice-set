@@ -1,10 +1,9 @@
+const getFirst=(arr)=>{
 
-const add = (x,y) => {
-  return x+y;
+return arr[0]
+
 
 }
 
-
-console.log( add(3,4)    ) // should log 7
-console.log( add(9, 102) ) // should log 111
-
+let card=getFirst([10,20,30])
+console.log(card)
