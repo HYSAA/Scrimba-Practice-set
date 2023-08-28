@@ -424,3 +424,8 @@ console.log(  Boolean(-0)   ) //false
 
 
 //function parameters practice
+const welcomeEl = document.getElementById("welcome-el")
+
+function greetUser() {
+    welcomeEl.textContent = "Welcome back, Per Harald Borgen 👋"    
+}
